@@ -1,0 +1,18 @@
+# ------------------------------------------==
+service:
+  host: http://localhost
+# ------------------------------------------==
+server:
+  shutdown: 'graceful '
+  tomcat:
+    max-http-form-post-size: 1MB
+    max-swallow-size: 1MB
+# ------------------------------------------==
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
+# ------------------------------------------==
+management:
+  health: false
